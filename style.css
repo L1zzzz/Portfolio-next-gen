@@ -1,0 +1,153 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --beige: #F8DEAE;
+    --brown: #201913;
+    --red: #D61413;
+    --blue: #148D84;
+    --orange: #E06517;
+}
+
+body {
+    background-color: var(--beige);
+}
+
+h2 {
+    text-transform: uppercase;
+    font-size: 35;
+    font-family: "semplicitapro", sans-serif;
+    font-weight: 600;
+}
+
+p {
+    font-size: 25px;
+    font-family: "omnes-pro", sans-serif;
+    font-weight: 500;
+    color: var(--brown);
+}
+
+nav {
+    position: sticky;
+    width: 100%;
+    height: 140px;
+    background-color: var(--blue);
+    font-family: "semplicitapro", sans-serif;
+}
+
+.logo-image {
+    height: 80px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 10px;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links a {
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 3px;
+    color: var(--beige);
+    font-size: 15px;
+    text-transform: uppercase;
+} 
+
+
+
+.main-section {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+
+#home-section {
+    background-color: var(--orange);
+}
+
+.portrait-photo {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.align-left {
+    text-align: left;
+    padding-right: 30%;
+}
+
+.align-right {
+    text-align: right;
+    padding-left: 30%;
+}
+
+.welcome-message {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 680px) {
+    nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        min-height: 8vh;
+    }
+
+    .nav-links {
+        position: initial;
+        flex-direction: row;
+        width: 40%;
+        height: inherit;
+        justify-content: space-around;
+        transform: translateX(0%);
+    }
+
+    .nav-links li {
+        opacity: 1;
+    }
+}
